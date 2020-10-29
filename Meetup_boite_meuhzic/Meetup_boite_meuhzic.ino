@@ -28,6 +28,7 @@ void setup()
   pinMode(switchPin, INPUT);
   digitalWrite(switchPin, HIGH);
 
+  delay(1000); //attente fin init myMP3.begin(mySerial)
   nbTrack = myMP3.numSdTracks();
   Serial.print("nb track: ");
   Serial.println(nbTrack);
